@@ -1,0 +1,21 @@
+.grid-sheet {
+    display: flex;
+}
+
+.textfield {
+    background-color: white;
+    opacity: 4;
+}
+
+@media (min-width: 641px) {
+    .grid-sheet {
+        display: grid;
+        grid-template-columns: 1fr minmax(641px, 1fr) 1fr;
+    }
+    
+    .textfield {
+        background-color: rgba(255, 255, 255, 0.5);
+        opacity: 1;
+        grid-column: 2 / span 1;
+    }
+}
