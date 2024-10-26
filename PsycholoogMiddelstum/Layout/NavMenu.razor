@@ -1,41 +1,38 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">PsycholoogMiddelstum</a>
+﻿<div class="navbar">
+    <input type="checkbox" title="Navigation menu" class="navbar-toggler" />
+
+    <div class="links">
+        <div class="nav-item">
+            <NavLink class="nav-link" href="home">
+                PsycholoogMiddelstum
+            </NavLink>
+        </div>
+
+        <div class="sub-links" onclick="document.querySelector('.navbar-toggler').click()">
+            <div class="nav-item">
+                <NavLink class="nav-link" href="overmij">
+                    Over mij
+                </NavLink>
+            </div>
+
+            <div class="nav-item">
+                <NavLink class="nav-link" href="behandeling">
+                    Behandeling
+                </NavLink>
+            </div>
+
+            <div class="nav-item">
+                <NavLink class="nav-link" href="kosten-en-vergoeding">
+                    Kosten en vergoeding
+                </NavLink>
+            </div>
+
+            <div class="nav-item">
+                <NavLink class="nav-link" href="verwijzing">
+                    Verwijzing
+                </NavLink>
+            </div>
+        </div>
+
     </div>
-</div>
-
-<input type="checkbox" title="Navigation menu" class="navbar-toggler" />
-
-<div class="nav-scrollable" onclick="document.querySelector('.navbar-toggler').click()">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="bi bi-house-door-fill-nav-menu" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="overmij">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Over mij
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="behandeling">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Behandeling
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="kosten-en-vergoeding">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Kosten en vergoeding
-            </NavLink>
-        </div>
-
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="verwijzing">
-                <span class="bi bi-plus-square-fill-nav-menu" aria-hidden="true"></span> Verwijzing
-            </NavLink>
-        </div>
-    </nav>
 </div>
