@@ -1,0 +1,26 @@
+.alie {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.photo {
+    grid-area: photo;
+    text-align: right;
+    align-content: center;
+}
+
+.text1 {
+    grid-area: text1;
+}
+
+.text2 {
+    grid-area: text2;
+}
+
+.about-me-grid {
+    display: grid;
+    grid-template-columns: auto 144px;
+    grid-template-areas:
+        "text1 photo"
+        "text2 text2";
+}
