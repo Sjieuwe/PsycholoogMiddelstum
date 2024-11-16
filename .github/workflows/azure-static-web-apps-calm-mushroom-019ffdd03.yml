@@ -31,8 +31,6 @@ jobs:
           app_location: "/PsycholoogMiddelstum" # App source code path
           output_location: "wwwroot" # Built app content directory, relative to app_location - optional
           ###### End of Repository/Build Configurations ######
-          api_location: ""
-          is_static_export: true
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
