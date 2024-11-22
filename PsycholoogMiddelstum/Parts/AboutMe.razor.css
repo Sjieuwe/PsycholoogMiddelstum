@@ -7,6 +7,7 @@
     grid-area: photo;
     text-align: right;
     align-content: center;
+    margin-left: 16px;
 }
 
 .text1 {
@@ -17,10 +18,58 @@
     grid-area: text2;
 }
 
+.text3 {
+    grid-area: text3;
+}
+
+.header {
+    grid-area: header;
+}
+
 .about-me-grid {
     display: grid;
     grid-template-columns: auto 144px;
     grid-template-areas:
+        "header photo"
         "text1 photo"
-        "text2 text2";
+        "text2 text2"
+        "text3 text3";
+}
+
+@media (min-width: 704px) {
+    .photo {
+        grid-area: photo;
+        text-align: right;
+        align-content: center;
+        margin-left: 16px;
+    }
+
+    .about-me-grid {
+        display: grid;
+        grid-template-columns: auto 144px;
+        grid-template-areas:
+            "header header"
+            "text1  photo"
+            "text2 photo"
+            "text3 text3";
+    }    
+}
+
+@media (min-width: 2400px) {
+    .photo {
+        grid-area: photo;
+        text-align: right;
+        align-content: center;
+        margin-left: 16px;
+    }
+
+    .about-me-grid {
+        display: grid;
+        grid-template-columns: 640px 144px;
+        grid-template-areas:
+            "header header"    
+            "text1  photo"
+            "text2 photo"
+            "text3 text3";
+    }    
 }
